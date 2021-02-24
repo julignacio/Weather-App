@@ -13,7 +13,7 @@ function App() {
   }
 
   function onSearch(ciudad) {
-    const url = `http://api.openweathermap.org/data/2.5/weather?q=${ciudad}&appid=${process.apiKey}&units=metric&lang=es`;
+    const url = `http://api.openweathermap.org/data/2.5/weather?q=${ciudad}&appid=${process.env.apiKey}&units=metric&lang=es`;
     fetch(url)
       .then((r) => r.json())
       .then((recurso) => {
