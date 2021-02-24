@@ -1,0 +1,21 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  transition: all 1s ease;
+}
+
+.App {
+  text-align: center;
+}
+
+.row {
+  display: flex;
+  justify-content: center;
+}
+
+body {
+  height: 100vh;
+  background: linear-gradient(to bottom, white, rgba(0, 0, 0, 0.3));
+  background-repeat: no-repeat;
+}
