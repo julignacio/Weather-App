@@ -7,14 +7,14 @@ import About from "./About.jsx";
 import Ciudad from "./Ciudad.jsx";
 
 function App() {
-  const { apiKey } = process.env;
+  const { api_key } = process.env;
   const [cities, setCities] = useState([]);
   function onClose(id) {
     setCities((oldCities) => oldCities.filter((c) => `card${c.id}` !== id));
   }
 
   function onSearch(ciudad) {
-    const url = `http://api.openweathermap.org/data/2.5/weather?q=${ciudad}&appid=${apiKey}&units=metric&lang=es`;
+    const url = `http://api.openweathermap.org/data/2.5/weather?q=${ciudad}&appid=${api_key}&units=metric&lang=es`;
     fetch(url)
       .then((r) => r.json())
       .then((recurso) => {
