@@ -143,7 +143,7 @@ function App() {
         render={({ match }) => (
           <Ciudad
             match={match}
-            api={apiKey}
+            api={api_key}
             cities={cities}
             bkgFunction={bkgFunction}
           />
