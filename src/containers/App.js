@@ -7,14 +7,14 @@ import About from "./About.jsx";
 import Ciudad from "./Ciudad.jsx";
 
 function App() {
-  const { api_key } = process.env;
+  const { REACT_APP_APIKEY } = process.env;
   const [cities, setCities] = useState([]);
   function onClose(id) {
     setCities((oldCities) => oldCities.filter((c) => `card${c.id}` !== id));
   }
 
   function onSearch(ciudad) {
-    const url = `http://api.openweathermap.org/data/2.5/weather?q=${ciudad}&appid=${api_key}&units=metric&lang=es`;
+    const url = `http://api.openweathermap.org/data/2.5/weather?q=${ciudad}&appid=${REACT_APP_APIKEY}&units=metric&lang=es`;
     fetch(url)
       .then((r) => r.json())
       .then((recurso) => {
@@ -143,7 +143,7 @@ function App() {
         render={({ match }) => (
           <Ciudad
             match={match}
-            api={api_key}
+            api={REACT_APP_APIKEY}
             cities={cities}
             bkgFunction={bkgFunction}
           />
