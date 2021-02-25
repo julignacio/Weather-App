@@ -14,7 +14,7 @@ function App() {
   }
 
   function onSearch(ciudad) {
-    const url = `http://api.openweathermap.org/data/2.5/weather?q=${ciudad}&appid=${REACT_APP_APIKEY}&units=metric&lang=es`;
+    const url = `https://api.openweathermap.org/data/2.5/weather?q=${ciudad}&appid=${REACT_APP_APIKEY}&units=metric&lang=es`;
     fetch(url)
       .then((r) => r.json())
       .then((recurso) => {
