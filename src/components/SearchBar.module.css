@@ -13,15 +13,14 @@
 }
 
 .boton {
-  /* margin-left: 0.1rem; */
   background-color: rgba(35, 110, 230, 0.5);
   color: #000;
   cursor: pointer;
   padding: 0.1rem;
   border-radius: 10px;
   border: none;
-  /* border: 1px solid rgba(0, 0, 0, 0.5); */
   font-size: 0.8rem;
+  width: 3rem;
 }
 
 .boton:hover {
@@ -34,4 +33,19 @@
   border: 1px solid rgba(0, 0, 0, 0.5);
   font-size: 0.8rem;
   padding: 0.1rem;
+}
+
+@media screen and (max-width: 500px) {
+  .search {
+    width: 30%;
+  }
+
+  .inputSearch {
+    width: 70%;
+  }
+
+  .boton {
+    width: 30%;
+    float: right;
+  }
 }

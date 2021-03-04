@@ -28,9 +28,9 @@ export default function Cards({ cities, onClose, bkgFunction }) {
       <div className={styles.cards}>
         {" "}
         <div className={styles.instructions}>
-          <h4>Aún no se cargó ninguna ciudad</h4>
+          <h4>There is no cities yet</h4>
           <div>
-            <h6>Probá buscando el nombre de la tuya!</h6>
+            <h6>Try to search yours!</h6>
           </div>
         </div>{" "}
       </div>

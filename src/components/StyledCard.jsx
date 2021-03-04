@@ -73,4 +73,8 @@ export const StyledCard = styled.div`
     font-size: 12px;
     color: ${(props) => props.textColor};
   }
+
+  @media screen and (max-width: 500px) {
+    width: 80%;
+  }
 `;
